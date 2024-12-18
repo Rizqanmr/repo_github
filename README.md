@@ -1,16 +1,17 @@
-# repo_github
+# Repo Github
 
-A new Flutter project.
+A simple [Flutter](https://flutter.dev/) app for search repositories by username and view repository detail using web view. This app using API from [The Movie Database](https://developer.themoviedb.org/docs/getting-started). And using [GetX](https://chornthorn.github.io/getx-docs/) State Management.
 
-## Getting Started
+## Notes
+Create a .env file in the root of your Flutter project and store your sensitive data:
+```
+BASE_URL=https://api.github.com
+API_KEY=your-secure-api-key
+```
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+and then run in the terminal:
+```
+flutter clean
+flutter pub get
+flutter run
+```
